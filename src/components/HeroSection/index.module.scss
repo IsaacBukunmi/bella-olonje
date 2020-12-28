@@ -1,0 +1,71 @@
+@import '../../styles/global.scss';
+
+
+._{
+    background-image: url('../../assets/hero-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    .container{
+        @extend %body-container;
+        .content{
+            color:$white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height:100vh;
+            h4, h1, p{
+                margin-top:0;
+                margin-bottom: 0;
+            }
+            h1{
+                font-size: 55px;
+                width:75%;
+                align-self: center;
+            }
+            p{
+                letter-spacing: 1px;
+                margin-top:10px;
+                margin-bottom: 30px;
+            }
+            .button_container{
+                button.playstore{
+                    background:$orange;
+                    border: none;
+                    color:$white;
+                    padding:15px 60px;
+                    font-family: $font-secondary;
+                    font-weight: bold;
+                    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+                    border-radius: 30px;
+                    margin-right:50px;
+                    cursor: pointer;
+                }
+                button.appstore{
+                    background:transparent;
+                    border: 1px solid $white;
+                    color:$white;
+                    padding:15px 60px;
+                    font-family: $font-secondary;
+                    font-weight: bold;
+                    border-radius: 30px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.app_showcase{
+    margin-top:-22vh;
+    .app_images{
+        text-align:center;
+        img{
+            width:auto;
+            height:auto;
+            object-fit: cover;
+        }
+    }
+}
+

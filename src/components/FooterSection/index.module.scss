@@ -1,0 +1,26 @@
+@import '../../styles/global.scss';
+
+._{
+    padding-top:60px;
+    padding-bottom:30px;
+    .container{
+        @extend %body-container;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .social_media{
+            img{
+                margin-right:25px;
+                &:last-of-type{
+                    margin-right: 0px;
+                }
+            }
+        }
+        .copyright{
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}

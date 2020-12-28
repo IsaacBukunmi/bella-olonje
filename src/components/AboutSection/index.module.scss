@@ -1,0 +1,52 @@
+@import '../../styles/global.scss';
+
+._{
+    margin-top:100px;
+    .container{
+        @extend %body-container;
+        .top_line_topic{
+            border-top:3px solid #E4E4E4;
+            margin-left:120px;
+            margin-right: 120px;
+            margin-bottom: 150px;
+            h2{
+                font-size:38px;
+                color:$fade-black;
+                text-align: center;
+                padding-top:20px;
+            }
+        }
+        .account_section{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-left:90px;
+            margin-right: 90px;
+            margin-bottom:200px;
+            .account_image{
+                width:40%;
+                align-self: center;
+                img{
+                    filter: drop-shadow(50px 30px 150px rgba(46, 4, 4, 0.15));
+                }
+            }
+            .account_text{
+                width:40%;
+                h4{
+                    color:$orange;
+                    margin-bottom:0 !important;
+                }
+                h2{
+                    color:$fade-black;
+                    margin-top:5px;
+                    margin-bottom:15px;
+                }
+                p{
+                    margin-top:0 !important;
+                    color:$gray;
+                }
+            }
+        }
+    }
+}

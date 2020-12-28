@@ -1,0 +1,51 @@
+@import '../../styles/global.scss';
+._{
+    background-image: url('../../assets/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    .container{
+        @extend %body-container;
+        .content{
+            color:$white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            height:70vh;
+            h2{
+                font-family: $font-secondary;
+                margin-top:10px !important;
+            }
+            p{
+                font-family: $font-secondary;
+                margin-top:0 !important;
+            }
+            .button_container{
+                margin-top:30px;
+                button.playstore{
+                    background:$orange;
+                    border: none;
+                    color:$white;
+                    padding:15px 40px;
+                    font-family: $font-secondary;
+                    font-weight: bold;
+                    box-shadow: 0px 10px 30px rgba(183, 50, 39, 0.2);
+                    border-radius: 10px;
+                    margin-right:30px;
+                    cursor: pointer;
+                }
+                button.appstore{
+                    background:transparent;
+                    border: 1px solid $white;
+                    color:$white;
+                    padding:15px 40px;
+                    font-family: $font-secondary;
+                    font-weight: bold;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

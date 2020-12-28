@@ -1,0 +1,29 @@
+@import '../../styles/global.scss';
+
+._{
+    padding-top:10px;
+    padding-bottom:0px;
+    .container{
+        @extend %nav-container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       .logo{
+           
+        }
+        .nav_list{
+            width:50%;
+            ul{
+                list-style-type: none;
+                display: flex;
+                justify-content: space-between;
+                li{
+                    font-size: 15px;
+                    &:first-of-type{
+                        color:$orange;
+                    }
+                }
+            }
+        }
+    }
+}
