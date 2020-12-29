@@ -19,7 +19,11 @@
                 justify-content: space-between;
                 li{
                     font-size: 15px;
+                    cursor: pointer;
                     &:first-of-type{
+                        color:$orange;
+                    }
+                    &:hover{
                         color:$orange;
                     }
                 }
